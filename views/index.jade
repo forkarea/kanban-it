@@ -1,0 +1,53 @@
+doctype html
+html(lang='en')
+	head
+		title= pageTitle
+		meta(name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+		meta(charset='utf-8')
+		meta(name='keywords' content='Kanban IT board, jade, node, javascript')
+		meta(name='rights' content='Kamil Rogala, info@kamilrogala.it')
+		meta(name='robots' content='index, follow')
+		meta(name='description' content='Kanban IT board by KamilRogala.IT.')
+		
+		link(href='/templates/intro/favicon.ico' rel='shortcut icon' type='image/vnd.microsoft.icon')
+		link(href='//fonts.googleapis.com/css?family=Didact+Gothic|Roboto+Mono&amp;subset=latin-ext' rel='stylesheet')
+		link(rel='stylesheet', href='css/style.css' type='text/css')
+	body
+		header
+			.wrapper
+				.flex-container.align-center.justify-space-between
+					a.logo-link(href='/' title='Kanban IT by KamilRogala.IT')
+						.logo.flex-container.justify-center
+							.logo-el.color-1
+							.logo-el.color-2
+							.logo-el.color-3
+						h1 Kanban IT
+					nav.top-nav
+						ul.flex-container.align-center.justify-flex-end
+							li
+								a.active(href='/' title='homepage') homepage
+							li
+								a(href='/app' title='Kanban IT') App
+							li
+								a(href='/contact' title='contact') contact
+		main
+			.wrapper
+				h2= header
+				p Welcome to my first Single Page App. Almost every dev starts with Todo List as a first SPA- I'm not exception but... Kanban board is quite more interesting in my opinion. 
+				p Use it if you want- it's totally free, be my guest!
+				p If you have questions, maybe some ideas or you have constructive criticism for me- feel free and 
+					a(href='/contact' title='Contact') contact with me!
+				p Thanks for sharing!
+		footer
+			.wrapper
+				.flex-container.align-flex-end.justify-space-between
+					nav.bottom-nav
+						ul.flex-container.align-center.justify-flex-start
+							li
+								a.active(href='/' title='homepage') homepage
+							li
+								a(href='/app' title='Kanban IT') App
+							li
+								a(href='/contact' title='contact') contact
+					p.author author: 
+							a(href='https://kamilrogala.it' title='KamilRogala.IT' target='_blank') KamilRogala.IT

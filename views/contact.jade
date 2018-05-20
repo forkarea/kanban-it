@@ -1,0 +1,61 @@
+doctype html
+html(lang="en")
+	head
+		title= pageTitle
+		meta(name='viewport' content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+		meta(charset='utf-8')
+		meta(name='keywords' content='Kanban IT board, jade, node, javascript')
+		meta(name='rights' content='Kamil Rogala, info@kamilrogala.it')
+		meta(name='robots' content='index, follow')
+		meta(name='description' content='Kanban IT board by KamilRogala.IT.')
+		
+		link(href='/templates/intro/favicon.ico' rel='shortcut icon' type='image/vnd.microsoft.icon')
+		link(href='//fonts.googleapis.com/css?family=Didact+Gothic|Roboto+Mono&amp;subset=latin-ext' rel='stylesheet')
+		link(rel='stylesheet', href='css/style.css' type='text/css')
+	body
+		header
+			.wrapper
+				.flex-container.align-center.justify-space-between
+					a.logo-link(href='/' title='Kanban IT by KamilRogala.IT')
+						.logo.flex-container.justify-center
+							.logo-el.color-1
+							.logo-el.color-2
+							.logo-el.color-3
+						h1 Kanban IT
+					nav.top-nav
+						ul.flex-container.align-center.justify-flex-end
+							li
+								a(href='/' title='homepage') homepage
+							li
+								a(href='/app' title='Kanban IT') App
+							li
+								a.active(href='/contact' title='contact') contact	
+		main
+			.wrapper
+				h2= header
+				p E-mail me: 
+					a(href='mailto:info@kamilrogala.it') info@kamilrogala.it
+				p Find me in social media:
+					br
+					a(href='https://www.facebook.com/kamil.rogala' title='Facebook' target='_blank') Facebook
+					br
+					a(href='https://linkedin.com/in/kamil-rogala-17a819109' title='Linked.in' target='_blank') Linked.in
+				p Check my GitHub:
+					br
+					a(href='https://github.com/kamilrogala/' title='GitHub' target='_blank') GitHub
+				p Check my website:
+					br
+					a(href='https://kamilrogala.it' title='KamilRogala.IT' target='_blank') https://KamilRogala.IT
+		footer
+			.wrapper
+				.flex-container.align-flex-end.justify-space-between
+					nav.bottom-nav
+						ul.flex-container.align-center.justify-flex-start
+							li
+								a(href='/' title='homepage') homepage
+							li
+								a(href='/app' title='Kanban IT') App
+							li
+								a.active(href='/contact' title='contact') contact
+					p.author author: 
+							a(href='https://kamilrogala.it' title='KamilRogala.IT' target='_blank') KamilRogala.IT
