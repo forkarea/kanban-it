@@ -1,10 +1,12 @@
 const express = require('express');
-
 const app = express();
+
+var port = process.env.PORT || 8080;
 app.set('view engine', 'jade');
-app.use('/img', express.static('src/img'));
-app.use('/css', express.static('src/css'));
-app.use('/js', express.static('src/js'));
+
+app.use('/img', express.static(__dirname + '/src/img'));
+app.use('/css', express.static(__dirname + '/src/css'));
+app.use('/js', express.static(__dirname + '/src/js'));
 app.get('/', function (req, res) {
 	res.render('index', {
 		pageTitle: 'Kanban IT',
@@ -23,6 +25,6 @@ app.get('/app', (req, res) => {
 		header: "let's Kanban IT!"
 	});
 });
-app.listen(3000, () => {
+app.listen(port, () => {
 	console.log("IT'S.... ALIVE! IT'S ALIVEEEE!")
 });
